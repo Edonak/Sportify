@@ -67,7 +67,7 @@ main{
     justify-content: space-between;
 }
 .part-top{
-    height: 8vh;
+    height: 4vh;
 }
 .part-top .part-top-left{
     display: flex;
@@ -84,19 +84,65 @@ main{
     color: rgba(247, 246, 245, 0.486);
 }
 .part-center{
-    background-color: #2596be;
     height: 30vh;
     width: 100%;
-    margin-left: 0;
+    overflow-y: scroll; /*Scroller ligne des ordonnées*/
+    scroll-snap-type: mandatory; /*SCroller en ligne*/
 }
-.part-center .list-create{
-    margin-top: 0;
-    height: 10vh;
-    width: 95%;
-    background-color: #e9d5d5b0;
+.list-create, .podcasts{
+    width: 98%;
+    margin-bottom: 1rem;
+    background-color: #fafafa10;
+    border-radius: var(--style-border-radius);
+    font-size: 0.9rem;
+    color: #fff;
+}
+.list-create{
+ height: 23vh;
+}
+.podcasts{
+ height: 28vh;
+}
+.list-create p, h5, .podcasts p, h5{
+    padding-left: 1rem;
+}
+.list-create h5, .podcasts h5{
+    padding-top: 1.3rem;
+    font-size: 0.9rem;
+}
+.list-create button, .podcasts button{
+    width: 35%;
+    height: 5vh;
+    float: left;
+    margin-left: 1rem;
+    background-color: #fff;
+    font-size: 0.8rem;
+}
+.podcasts button{
+    width: 50%;
 }
 .part-bottom{
-
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+.part-bottom a{
+    text-decoration: none;
+    color: #c9c7c7;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+.part-bottom button{
+    width: 32%;
+    height: 5vh;
+    font-size: 0.8rem;
+    margin-top: 3rem;
+    background-color: #0000007c;
+    color: #fff;
+    border: 1px solid #c9c7c7;
+}
+.part-bottom span{
+    font-size: 1.2rem;
 }
 /*Style play list Main*/
 .play-list_container{
@@ -125,13 +171,13 @@ main{
     width: 20%;
 }
 .icons-direction span{
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-left: 1rem;
     background-color: #000;
     border-radius: 50%;
 }
 
- button{
+button{
     float: right;
     height: 8.5vh;
     border-radius: 50px;
@@ -141,9 +187,23 @@ main{
     background-color: #e9d5d5b0;
 }
 .black, .white{
-    width: 15%;
+    width: 17%;
     border-radius: 25px;
+    height: 2.7rem;
+    background-color: #fff;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
 }
+.black{
+    margin-left: 23rem;
+    color:#fff;
+    background-color:  rgba(65, 65, 64, 0);;
+}
+/*PLay list style*/
+
+
 /*Footer Style*/
 footer{
     width: 99%;
