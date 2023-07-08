@@ -7,6 +7,12 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,400&family=Ysabeau+Office:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -19,7 +25,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
     <link
       rel="stylesheet"
@@ -30,26 +36,57 @@
   </head>
   <body>
     <main>
-      <section class="acueil-bibilotheque">
+      <section class="accueil-bibilotheque">
         <div class="acceuil_container">
-          <p>
-            <i class="material-icons">home</i>
-            Acceuil
-          </p>
-          <p><i class="fa fa-search"></i>Rechercher</p>
+          <div class="home-icons">
+            <span class="material-symbols-outlined"> home </span>
+            <p>Acceuil</p>
+          </div>
+          <div class="search-icon">
+            <span class="material-symbols-outlined"> search </span>
+            <p>Rechercher</p>
+          </div>
         </div>
-        <div class="bibliotheque_container"></div>
+        <div class="bibliotheque_container">
+          <div class="part-top">
+            <div class="part-top-left">
+              <span class="material-symbols-outlined"> web_stories </span>
+              <p>Bibliothèque</p>
+            </div>
+            <span class="material-symbols-outlined addition"> add </span>
+          </div>
+          <div class="part-center">
+            <div class="list-create">
+              <h5>Créer votre première playlist</h5>
+              <p>C'est simple, nous allons vous aider</p>
+              <button type="button">Créer une playlist</button>
+            </div>
+            <div class="podcasts">
+              <h5>Cherchons quelques podcasts auxquels vous abonner</h5>
+              <p>Nous vous transmettrons des informations sur les nouveaux épisodes</p>
+              <button type="button">Parcourir les podcasts</button>
+            </div>
+          </div>
+          <div class="part-bottom">
+            <a href="#">Cookies</a>
+            <button type="button"><span class="material-symbols-outlined">
+              language
+              </span>Français</button>
+          </div>
+        </div>
       </section>
       <section class="play-list_container">
         <div class="play-list_header">
           <div class="icons-direction">
-            <i class="fa fa-chevron-circle-left"></i>
-            <i class="fa fa-chevron-circle-right"></i>
+            <span class="material-symbols-outlined">
+              chevron_left
+              </span>
+            <span class="material-symbols-outlined">
+            chevron_right
+            </span>
           </div>
-          <div class="connexon-btn">
-            <button type="button" class="black">S'inscrire</button>
-            <button type="button" class="white">Se connecter</button>
-          </div>
+          <button type="button" class="black">S'inscrire</button>
+          <button type="button" class="white">Se connecter</button>
         </div>
       </section>
     </main>

@@ -15,22 +15,19 @@ body{
     height: 100vh;
     font-family: var(--txt-font);
 }
-
-main, footer{
+main{
     display: flex;
     justify-content: space-around;
     width: 99%;
     margin: 0 auto;
 }
-
-.acueil-bibilotheque{
+.accueil-bibilotheque{
     width: 30%;
-
 }
 .acceuil_container{
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
     margin-top: 0.5rem;
     color: #c9c7c7;
     font-size: 1.2rem;
@@ -38,20 +35,70 @@ main, footer{
     border-radius: var(--style-border-radius);
     height: 17.7vh;
 }
-.acceuil_container img{
-    width: 7%;
+.home-icons, .search-icon{
+    display: flex;
 }
+.acceuil_container span{
+    margin: 0.7rem 0 0.7rem 1.5rem;
+    font-size: 1.9rem;
+}
+.acceuil_container p{
+    margin :1rem 0 0 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(247, 246, 245, 0.589);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
 .bibliotheque_container{
     display: flex;
+    padding: 1rem 0 0 1.5rem;
     flex-direction: column;
     align-content: center;
     margin-top: 0.5rem;
     color: #c9c7c7;
     font-size: 1.2rem;
-    background-color: red;
+    background-color: var(--bg-secondary);
     border-radius: var(--style-border-radius);
     height: 65.5vh;
 }
+.bibliotheque_container .part-top{
+    display: flex;
+    justify-content: space-between;
+}
+.part-top{
+    height: 8vh;
+}
+.part-top .part-top-left{
+    display: flex;
+}
+.part-top-left p{
+    margin: 0 0 0 1.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(247, 246, 245, 0.589);
+    font-family: 'Nunito Sans', sans-serif;
+}
+.part-top .addition{
+    padding-right: 1.5rem;
+    color: rgba(247, 246, 245, 0.486);
+}
+.part-center{
+    background-color: #2596be;
+    height: 30vh;
+    width: 100%;
+    margin-left: 0;
+}
+.part-center .list-create{
+    margin-top: 0;
+    height: 10vh;
+    width: 95%;
+    background-color: #e9d5d5b0;
+}
+.part-bottom{
+
+}
+/*Style play list Main*/
 .play-list_container{
     width: 70%;
     height: 84.5vh;
@@ -64,8 +111,6 @@ main, footer{
     border-radius: var(--style-border-radius);
 }
 
-/*Style pjay list Main*/
-
 .play-list_header{
     display: flex;
     width: 99%;
@@ -74,15 +119,20 @@ main, footer{
     background-color: var(--bg-secondary);
     height: 10vh;
 }
-.play-list_header{
-
-}
-.connexon-btn{
-    margin-left: 70%;
+.icons-direction{
     display: flex;
     align-items: center;
+    width: 20%;
 }
-.connexon-btn button{
+.icons-direction span{
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+ button{
+    float: right;
     height: 8.5vh;
     border-radius: 50px;
     font-size: 1rem;
@@ -90,15 +140,17 @@ main, footer{
     font-weight: 600;
     background-color: #e9d5d5b0;
 }
-.connexon-btn .black{
-    background-color: var(--bg-secondary);
-    width: 50%;
+.black, .white{
+    width: 15%;
+    border-radius: 25px;
 }
+/*Footer Style*/
 footer{
     width: 99%;
     height: 12vh;
+    margin: 0 auto;
     display: flex;
-    justify-content: safe;
+    justify-content: space-around;
     align-items: center;
     color: #c9c7c7;
     background: linear-gradient(5deg,  #be2590, #2596be);
