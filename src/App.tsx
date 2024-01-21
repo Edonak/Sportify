@@ -1,10 +1,11 @@
 import './App.css'
+import Home from './pages/home'
 
 function App() {
 
   return (
     <>
-      <p className='text-3xl font-bold underline'>Hello les amoureux de la musique</p>
+    <Home />
     </>
   )
 }

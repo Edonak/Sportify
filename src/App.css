@@ -1,0 +1,22 @@
+:root{
+    --bg-primary: #000; 
+    --bg-secondary: rgba(65, 65, 64, 0.281);
+    --text-color: #c9c7c7; 
+    --button-color: #fff;
+    --style-border-radius: 4px; 
+    --txt-font:'Roboto', sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    background-color: var(--bg-primary);
+    font-family: var(--txt-font);
+}
+.header{
+    width: 30%;
+    background-color: var(--bg-secondary);
+    height: 17.7vh;
+    color: #c9c7c7;
+}
